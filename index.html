@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>VALO-3D</title><meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="c"></canvas>
+<div id="hud"><div id="sb"></div><div id="top"><div id="bar"><div id="hp"></div></div><span id="inf"></span></div><div id="code"></div><div id="feed"></div><div id="cross" class="dot"><i class="d"></i><i class="r"></i><i class="p1"></i><i class="p2"></i></div></div>
+<div id="dmg"></div><div id="fl"></div><div id="jb"></div><div id="jk"></div>
+<div id="rot">📱↻<br>Oynamak için telefonu / tableti yatay çevir</div>
+<div id="ebar"><span>Tuşları sürükle</span><button class="g" onclick="resetEdit()">Sıfırla</button><button onclick="endEdit()">Bitti</button></div>
+<div class="ov" id="dead">ÖLDÜN<small>Yeniden doğuyorsun…</small></div>
+<div class="ov" id="buy"></div>
+<div class="ov" id="menu"><div class="card"><h1>VALO-3D</h1>
+<input id="nm" maxlength="12" placeholder="İsim" style="text-transform:none"><br>
+<button onclick="go('host')">🏠 Oda Kur</button><br>
+<input id="cd" maxlength="6" placeholder="KOD"><button onclick="go('join')">Odaya Gir</button><br>
+<button class="g" onclick="go('solo')">🎯 Antrenman (botlar)</button><button class="g" onclick="startEdit()">🎛 Tuş Düzeni</button><br><b>Nişangah:</b> <button class="g" onclick="xh('dot')">●</button><button class="g" onclick="xh('ring')">◯</button><button class="g" onclick="xh('plus')">＋</button>
+<div id="msg"></div>
+<small><b>Klavye:</b> WASD, Space zıpla, C eğil, Fare ateş/dürbün, R şarjör, H iyileş, F flash, G sis, B mağaza, 1-4 silah<br>
+<b>DualSense:</b> R2 ateş, L2 dürbün, X zıpla, Kare şarjör, Üçgen iyileş, Yuvarlak flash, R1 sis, L1 eğil, Options mağaza, D-pad silah<br>
+<b>Dokunmatik:</b> sol yarı hareket, sağ yarı bakış, butonlar</small></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.4/peerjs.min.js"></script>
+<script src="peer-room.js"></script>
+<script src="game1.js"></script>
+<script src="game2.js"></script>
+<script src="game3.js"></script>
+<script src="game4.js"></script>
+</body></html>
